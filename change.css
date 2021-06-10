@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    
+  }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*navbar start */
+.navbar{
+  height: 55px;
+}
+.companyBrand {
+    font-weight: bold;
+    font-size: 25px;
+    
+  }
+  .nav-link{
+      color: var(--white) !important;
+      padding-left: 12px !important;
+      font-size: 19px !important;
+      margin-top: 18px;
+      padding: 0em;
+    }
+  /* dropdown start */
+  .nav-link:hover{
+      background-color: var(--white);
+      color: rgba(13, 52, 81, 1) !important;
+      font-weight: bold;
+    }
+
+    .dropdown-item:hover{
+      color: rgba(13, 52, 81, 1);
+  font-weight: bold;
+  align-self: center;
+}
+    .dropdown-menu {
+      display: none;
+      position: relative;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      margin-top: 10px;
+      margin-right: 10px;
+      min-width: 200px;
+      z-index: 1;
+    }
+    /* dropdown end */
+  /* .main-body{
+      position: relative;
+      height: auto;
+  } */
+  /* main body start */
+  .main-container {
+    border: #e0dede;
+    display: flex;
+    width: 50%;
+    border: 1px solid #e0dede;
+    box-sizing: border-box;
+    height: 60vh;
+    background: #ffffff;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.1em solid rgba(224, 222, 222, 1);
+    overflow: hidden;
+  }
+  .center {
+    padding: 1em;
+    align-items: center;
+  }
+  
+  .login {
+    margin-top: 15%;
+    color: rgba(13, 52, 81, 1);
+    font-size: 2em;
+  }
+  .lets {
+    color: rgba(13, 52, 81, 1);
+    font-size: 1.5em;
+  }
+  .please {
+    color: #000000;
+    font-size: 1em;
+  }
+  
+  .left-side {
+    display: 1;
+    /*width: 30%;*/
+    background: rgba(226, 237, 255, 1);
+    /*height: 100%;*/
+  
+  }
+  
+  .right-side {
+    display: 1;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    text-align: center;
+    /*margin-left: 4%;*/
+    /*margin-top: 5%;*/
+  
+  }
+  
+  .login2 {
+    color: rgba(13, 52, 81, 1);
+    font-size: 1.5em;
+    margin-top: 12%;
+  }
+  .use {
+    color: rgba(13, 52, 81, 1);
+    font-size: 15px;
+  }
+  
+  .new {
+    color: rgba(13, 52, 81, 1);
+    font-size: 0.9em;
+    margin-top: 1em;
+  }
+  
+  .col-sm-4 ,.col-md-4{
+    padding: 0px;
+  }
+  
+  input[type="password"] {
+    /*border: 1px solid black;*/
+    padding: 0em 1em;
+    border-radius: 5px;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  input[type="password"]:focus {
+    outline: none;
+    border: 2px solid #f67a06;
+  }
+  
+  .but {
+    text-align: center;
+    color: #ffff;
+    background: #3062ad;
+    /*width: 200px;*/
+    width: 49%;
+    height: 35px;
+    font-size: 1em;
+    border-radius: 50px;
+    margin-top: 1em;
+    /*margin-left: 1em;*/
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  
+  .but:hover {
+    opacity: 0.8;
+  }
+  /* main body end */
+  /* footer start */
+  .footer {
+    background: #f3f3f3;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    
+  }
+  .footer ul {
+    align-self: center;
+    float: right;
+    display: flex;
+    list-style-type: none;
+    font-size: 0.78em;
+  }
+  .footer ul li {
+    margin: 17px 10px;
+    white-space: nowrap;
+    
+  }
+  /* footer end */
+
+  
+  @media only screen and (max-width: 991px) {
+    .navbar{
+      height: auto;
+    }
+      .main-body{
+          position: relative;
+      }
+
+    .main-container {
+        width: 90%;
+        height: auto;
+        font-size: 1em;
+        display: block;
+        /* margin-top: 300px; */
+        position: relative;
+        top: 0%;
+        left: 5%;
+        transform: translate(0%, 5%);
+    } 
+      .left-side {
+        width: 100%;
+        /*height: auto;*/
+      }
+  
+      .right-side {
+        width: 100%;
+        /*height: auto;*/
+        text-align: center;
+        margin-top: 0%;
+        padding: 10px;
+      }
+      .login{
+         margin-top: 0%;
+         font-size: 1.5em;
+      }
+      .lets { font-size: 1.1em; }
+  
+      .but {
+          width: 100%;
+          margin-top: 8px;
+          margin-left: 0px;
+      }
+  
+      /*.row{
+        margin: 15px 0 0 0 ;
+      }*/
+      /* footer start */
+      .footer  {
+        position: relative;
+        margin-top: 10%;
+      }
+    .footer ul {
+           
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+        background: #F3F3F3;
+       
+      }
+    .footer ul li {
+        margin: 10px 10px;
+        
+      }
+      .footer ul li:nth-child(even) {
+        display: none;
+      }
+      /* footer end */
+  }
+
+
+  @media only screen and (max-width: 600px) {
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 1200px) {
+     .companyBrand{font-size: 1.5em;} 
+     .nav-link{font-size : 1em;} 
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 1300px) {
+     .companyBrand{
+       font-size: 2.2em !important;} 
+     .nav-link{
+       font-size : 1.5em !important;}
+      
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 1500px) {
+      .companyBrand{font-size: 2.4em;} 
+      .nav-link{font-size : 1.7em;} 
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 1600px) {
+     .companyBrand{font-size: 2.6em;} 
+    .nav-link{font-size : 1.9em;} 
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 1900px) {
+    .companyBrand{font-size: 2.8em;} 
+    .nav-link{font-size : 2em;} 
+  }
+  
+  
+  
+  
+  
